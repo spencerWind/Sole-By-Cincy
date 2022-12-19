@@ -1,0 +1,41 @@
+$primaryClr: #D71D2D;
+$secondaryClr: #00B2CA;
+$black: #171614;
+$white: #F6F1F8;
+
+@import './mixins';
+
+
+//fonts
+
+
+
+
+//body
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background: $black;
+    width: 100%;
+    height: 100vh
+
+}
+
+//header
+
+header{
+    @include flex(row, left);
+    width: auto;
+    
+
+    h1{
+        color: $white;
+        margin: 2rem 0;
+
+    }
+}

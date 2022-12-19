@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background: #171614;
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  width: auto;
+}
+header h1 {
+  color: #F6F1F8;
+  margin: 2rem 0;
+}/*# sourceMappingURL=style.css.map */

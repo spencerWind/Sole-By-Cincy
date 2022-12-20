@@ -6,3 +6,10 @@
     justify-content: $justify;
     
 }
+
+@mixin imageFill($url){
+    background-image: $url;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

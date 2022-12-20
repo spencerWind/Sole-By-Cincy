@@ -1,11 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  box-sizing: border-box;
-  background: #171614;
+  background-image: url("../images/gradient_img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   height: 100vh;
 }
@@ -14,10 +17,51 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: left;
-  width: auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: rgba(23, 22, 20, 0.8);
+  border-bottom: 1px solid #D71D2D;
+  width: 100%;
 }
 header h1 {
-  color: #F6F1F8;
+  font-family: "Ms Madi", cursive;
+  color: #D71D2D;
+  font-size: 2.2rem;
+  margin: 5px 1rem;
+}
+header p {
+  text-align: center;
+  color: #00B2CA;
+  font-size: 1.2rem;
+}
+
+.card-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.card-box .card {
+  width: 30%;
+  min-width: 300px;
   margin: 2rem 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  height: 400px;
+}
+.card-box .card .image-box {
+  background-image: url("../images/card2_img.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70%;
+}
+.card-box .card .image-box img {
+  position: r;
+  width: 100%;
+}
+.card-box .card .info-box {
+  height: 30%;
 }/*# sourceMappingURL=style.css.map */

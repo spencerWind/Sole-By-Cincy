@@ -32,6 +32,9 @@ body{
     width: 100%;
     height: 100vh;
 
+    font-family: $primaryFont;
+    color: $black;
+
 
 }
 
@@ -73,27 +76,63 @@ header{
     width: 100%;
 
     .card{
-        width: 30%;
         min-width: 300px;
+        width: 25%;
         margin: 2rem 0;
         background: rgba(255, 255, 255, 0.2);
         border-radius: 10px;
-        height: 400px;
+        height: 500px;
 
         .image-box{
             @include imageFill(url('../images/card2_img.jpeg'));
 
             height: 70%;;
+            border-radius: 10px;
 
+            h3{
+                padding-left: 1.5rem;
+                padding-top: 1rem;
+                font-size: 1.5rem;
+            }
 
-            img{
-                position: r;
-                width: 100%;
+            p{
+                padding-left: 1.5rem;
+                color: $primaryClr;
             }
         }
 
         .info-box{
+            @include flex(column, center, space-between);
             height: 30%;
+
+            p{
+                width: 80%;
+                margin-top: 1rem;
+                color: $white;
+            }
+
+            div{
+                @include flex(row, center, space-between);
+
+                padding-bottom: 1rem;
+                width: 80%;
+
+                h4{
+                    color: $secondaryClr;
+                    font-size: 1.5rem;
+                }
+
+                button{
+                    border: none;
+                    background: $primaryClr;
+                    color: $white;
+                    font-size: 1.2rem;
+                    padding: 3px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
+            }
+
         }
         
     }

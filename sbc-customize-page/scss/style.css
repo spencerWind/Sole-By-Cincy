@@ -14,26 +14,24 @@ body {
   background-attachment: fixed;
   font-family: "Roboto Mono", monospace;
   color: #171614;
+  overflow-x: hidden;
 }
 
 header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  background: rgba(0, 0, 0, 0.21);
-  backdrop-filter: blur(16.9px);
-  -webkit-backdrop-filter: blur(16.9px);
-  border: 1px solid rgba(0, 0, 0, 0.09);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(11.2px);
+  -webkit-backdrop-filter: blur(11.2px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
   flex-wrap: wrap;
   border-bottom: 1px solid #D71D2D;
   width: 100%;
+  padding: 0 6.5%;
+  height: 64px;
 }
 header h1 {
   font-family: "Ms Madi", cursive;
   color: #D71D2D;
   font-size: 2.2rem;
-  margin: 5px 1rem;
 }
 header p {
   text-align: center;
@@ -50,10 +48,13 @@ header p {
   width: 100%;
 }
 .card-box .card {
-  background: rgba(0, 0, 0, 0.21);
-  backdrop-filter: blur(16.9px);
-  -webkit-backdrop-filter: blur(16.9px);
-  border: 1px solid rgba(0, 0, 0, 0.09);
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.48);
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(11.2px);
+  -webkit-backdrop-filter: blur(11.2px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
   min-width: 300px;
   width: 25%;
   margin: 2rem 0;
@@ -64,8 +65,10 @@ header p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 70%;
+  height: 60%;
   border-radius: 10px;
+  margin: 1rem;
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
 }
 .card-box .card .image-box h3 {
   padding-left: 1.5rem;
@@ -86,7 +89,7 @@ header p {
 .card-box .card .info-box p {
   width: 80%;
   margin-top: 1rem;
-  color: #F6F1F8;
+  color: #171614;
 }
 .card-box .card .info-box div {
   display: flex;
@@ -97,12 +100,12 @@ header p {
   width: 80%;
 }
 .card-box .card .info-box div h4 {
-  color: #00B2CA;
+  color: #D71D2D;
   font-size: 1.5rem;
 }
 .card-box .card .info-box div button {
   border: none;
-  background: #D71D2D;
+  background: #00B2CA;
   color: #F6F1F8;
   font-size: 1.2rem;
   padding: 3px;

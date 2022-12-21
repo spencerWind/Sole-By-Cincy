@@ -27,24 +27,25 @@ $backgroundGradient: url('../images/gradient_img.png');
 }
 
 body{
-@include imageFill($backgroundGradient);
+    @include imageFill(url('../images/site-background.png'));
 
     width: 100%;
     height: 100vh;
-
+    background-attachment: fixed;
     font-family: $primaryFont;
     color: $black;
 
 
 }
 
+
 //header
 
 header{
     @include flex(row, center, space-between);
+    @include glassEffect;
 
     flex-wrap: wrap;
-    background: rgba(23, 22, 20, 0.8);
     border-bottom: 1px solid $primaryClr;
     width: 100%;
 
@@ -76,11 +77,11 @@ header{
     width: 100%;
 
     .card{
+        @include glassCard;
+
         min-width: 300px;
         width: 25%;
         margin: 2rem 0;
-        background: rgba(255, 255, 255, 0.2);
-        border-radius: 10px;
         height: 500px;
 
         .image-box{

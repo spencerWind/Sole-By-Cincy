@@ -34,6 +34,7 @@ body{
     background-attachment: fixed;
     font-family: $primaryFont;
     color: $black;
+    overflow-x: hidden;
 
 
 }
@@ -42,19 +43,19 @@ body{
 //header
 
 header{
-    @include flex(row, center, space-between);
     @include glassEffect;
 
     flex-wrap: wrap;
     border-bottom: 1px solid $primaryClr;
     width: 100%;
+    padding: 0 6.5%;
+    height: 64px;
 
 
     h1{
         font-family: $heroFont;
         color: $primaryClr;
         font-size: 2.2rem;
-        margin: 5px 1rem;
     }
 
     p{
@@ -87,8 +88,10 @@ header{
         .image-box{
             @include imageFill(url('../images/card2_img.jpeg'));
 
-            height: 70%;;
+            height: 60%;;
             border-radius: 10px;
+            margin: 1rem;
+            box-shadow: 0 10px 8px rgba(0,0,0,0.1);
 
             h3{
                 padding-left: 1.5rem;
@@ -105,11 +108,13 @@ header{
         .info-box{
             @include flex(column, center, space-between);
             height: 30%;
+            
 
             p{
                 width: 80%;
                 margin-top: 1rem;
-                color: $white;
+                color: $black;
+                
             }
 
             div{
@@ -119,13 +124,13 @@ header{
                 width: 80%;
 
                 h4{
-                    color: $secondaryClr;
+                    color: $primaryClr;
                     font-size: 1.5rem;
                 }
 
                 button{
                     border: none;
-                    background: $primaryClr;
+                    background: $secondaryClr;
                     color: $white;
                     font-size: 1.2rem;
                     padding: 3px;

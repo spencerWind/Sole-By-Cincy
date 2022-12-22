@@ -40,32 +40,119 @@ body{
 }
 
 
-//header
 
-header{
+
+
+
+//mobile
+@media only screen and (max-width: 800px) {
+
+    //header
+    header{
+        @include glassEffect;
+        @include flex(row, center, space-between);
+        
+        width: 100%;
+        height: 64px;
+
+    
+    
+        h2{
+            font-family: $primaryFont;
+            color: $black;
+            padding-left: 15%;
+
+            span{
+                color: $primaryClr;
+            }
+        }
+
+        .nav{
+            display: none;
+        }
+
+        .nav2{
+            display: none
+        }
+
+        .hamburger{
+            display: block;
+            width: 32px;
+            height: 32px;;
+            cursor: pointer;
+            background: $secondaryClr
+        }
+ 
+    }
+   
+  }
+
+  
+  //header
+  header{
     @include glassEffect;
-
-    flex-wrap: wrap;
-    border-bottom: 1px solid $primaryClr;
+    @include flex(row, center, space-between);
+    
     width: 100%;
-    padding: 0 6.5%;
     height: 64px;
 
 
-    h1{
-        font-family: $heroFont;
-        color: $primaryClr;
-        font-size: 2.2rem;
+
+    h2{
+        width: 30%;
+        font-family: $primaryFont;
+        font-size: 1.5rem;
+        color: $black;
+        margin-left: 5rem;
+
+        span{
+            color: $primaryClr;
+        }
     }
 
-    p{
-        text-align: center;
-        color: $secondaryClr;
-        font-size: 1.2rem;
+    .nav{
+        width: 40%;
+
+        ul{
+            @include flex(row, center, space-between);
+
+            list-style: none;
+
+            li{
+                a{
+                    @include linkText;
+                }
+
+            }
+        }
+    }
+
+    .nav2{
+        width: 30%;
+        margin-right: 5rem;
+
+        ul{
+            display: flex;
+            justify-content: end;
+            list-style: none;
+
+            li{
+                a{
+                    @include linkText;
+                    margin-left: 2rem;
+                }
+            }
+        }
+    }
+
+    .hamburger{
+        display: none;
     }
 
    
 }
+
+
 
 
 
@@ -82,7 +169,8 @@ header{
 
         min-width: 300px;
         width: 25%;
-        margin: 2rem 0;
+
+        margin: 3rem;
         height: 500px;
 
         .image-box{

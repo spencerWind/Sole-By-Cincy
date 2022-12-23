@@ -97,6 +97,8 @@ body{
     
     width: 100%;
     height: 64px;
+    position: fixed;
+    z-index: 10;
 
 
 
@@ -162,7 +164,6 @@ body{
 
 .card-box{
     @include flex(row, center, space-around);
-    margin-top: 3rem;
 
 
 
@@ -241,6 +242,7 @@ body{
 
     height: 30%;
     border: none;
+    margin-top: 64px;
 
     h1{
         font-size: 2.5rem;
@@ -257,5 +259,15 @@ body{
 
 }
 
+.hero-text{
+    background: none;
+}
+
+.subheader{
+    @include flex(row, center, left);
+    margin-left: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
 
 }

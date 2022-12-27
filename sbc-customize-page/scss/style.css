@@ -199,6 +199,17 @@ header .hamburger {
   cursor: pointer;
 }
 
+.subheader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  margin-left: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
 .hero {
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(11.2px);
@@ -228,13 +239,11 @@ header .hamburger {
   background: none;
 }
 
-.subheader {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: left;
-  margin-left: 5rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
+.form-box {
+  border: 1px solid blue;
+  margin-top: 10vh;
+}
+
+.hidden {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

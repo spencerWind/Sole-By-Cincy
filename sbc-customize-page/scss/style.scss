@@ -89,7 +89,9 @@ body{
    
   }
 
-  
+  //desktop
+
+
   //header
   header{
     @include glassEffect;
@@ -161,6 +163,7 @@ body{
 
 
 
+//cards
 
 .card-box{
     @include flex(row, center, space-around);
@@ -236,6 +239,18 @@ body{
     }
 }
 
+.subheader{
+    @include flex(row, center, left);
+    margin-left: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+
+}
+
+
+//hero
+
 .hero{
     @include glassEffect;
     @include flex(row, center, left);
@@ -263,11 +278,15 @@ body{
     background: none;
 }
 
-.subheader{
-    @include flex(row, center, left);
-    margin-left: 5rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
+//form menu
 
+.form-box{
+    border: 1px solid blue;
+    margin-top: 10vh;
 }
+
+.hidden{
+    display: none;
+}
+
+

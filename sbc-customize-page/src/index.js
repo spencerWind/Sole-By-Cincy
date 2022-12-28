@@ -8,8 +8,8 @@ function twoColorToggle(){
         two_color.classList.remove('hidden');
     }
 
-    three_color.classList.add('hidden');
-    custom_config.classList.add('hidden');
+    //three_color.classList.add('hidden');
+    //custom_config.classList.add('hidden');
 
 }
 
@@ -18,8 +18,8 @@ function threeColorToggle(){
         three_color.classList.remove('hidden');
     }
 
-    two_color.classList.add('hidden');
-    custom_config.classList.add('hidden');
+    //two_color.classList.add('hidden');
+    //custom_config.classList.add('hidden');
 
 }
 
@@ -28,7 +28,7 @@ function customConfigToggle(){
         custom_config.classList.remove('hidden');
     }
     
-    two_color.classList.add('hidden');
-    three_color.classList.add('hidden');
+    //two_color.classList.add('hidden');
+    //three_color.classList.add('hidden');
 
 }

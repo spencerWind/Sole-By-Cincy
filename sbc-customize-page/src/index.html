@@ -94,25 +94,75 @@
             <div class="form-box">
 
                 <div id="two-color" class="form">
-                    <div class="selection-box options">
-                        <h1>Options Configurator</h1>
-                        <div class="primary-color">
-                            <h2>Primary Color</h2>
-                            <button>Select</button>
+                    
+                    <div class="form-container">
+
+                        <h1>Custom Configurator</h1>
+
+                        <div class="selection-box">
+                            <div class="selection-type">
+                                <h2>Color 1</h2>
+                                <button onclick="colorOneToggle()">Choose</button>
+                            </div>
+                            <div class="selection-type">
+                                <h2>Color 2</h2>
+                                <button onclick="colorTwoToggle()">Choose</button>
+                            </div>
+                            <div class="selection-type">
+                                <h2>Color 3</h2>
+                                <button onclick="colorThreeToggle()">Choose</button>
+                            </div>
+                            <div class="selection-type">
+                                <h2>Border Color</h2>
+                                <button onclick="borderColorToggle()">Choose</button>
+                            </div>
+                            <div class="selection-type">
+                                <h2>Lace Color</h2>
+                                <button onclick="laceColorToggle()">Choose</button>
+                            </div>
+                            <div class="selection-type">
+                                <h2>Other Options</h2>
+                                <button onclick="otherOptionsToggle()">Choose</button>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="arrow-box">
-                    </div>
+                        <div class="config-container">
+                            <div class="color-1 hidden active" id="color-1">
+                                <h2>Color 1</h2>
+                            </div>
+                            <div class="color-2 hidden" id="color-2">
+                                <h2>Color 2</h2>
+                            </div>
+                            <div class="color-3 hidden" id="color-3">
+                                <h2>Color 3</h2>
+                            </div>
+                            <div class="border-color hidden" id="border-color">
+                                <h2>Border Color</h2>
+                            </div>
+                            <div class="lace-color hidden" id="lace-color">
+                                <h2>Lace Color</h2>
+                            </div>
+                            <div class="other-options hidden" id="other-options">
+                                <h2>Other Options</h2>
+                            </div>
 
-                    <div class="selection-box config">
-                        <h1>no</h1>
+
+                        </div>
+
+
+
+
+
+
+                        
                     </div>
 
                 </div >
 
                 <div id="three-color" class="form hidden">
                     <h1>Three Color</h1>
+                    <div>nice</div>
+                    <button>yes</button>
                 </div>
 
                 <div id="custom-config" class="form hidden">

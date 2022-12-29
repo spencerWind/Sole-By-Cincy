@@ -223,7 +223,7 @@ header .hamburger {
   flex-direction: row;
   align-items: center;
   justify-content: left;
-  height: 30%;
+  height: 20vh;
   border: none;
   margin-top: 64px;
 }
@@ -257,6 +257,7 @@ header .hamburger {
   height: 80%;
   width: 100%;
   padding: 2rem 5rem;
+  box-sizing: border-box;
 }
 
 .hidden {
@@ -264,14 +265,23 @@ header .hamburger {
 }
 
 #two-color {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: start;
   width: 100%;
   height: 100%;
 }
-#two-color .selection-box {
+#two-color .form-container {
+  display: grid;
+  grid-template-columns: auto auto 40%;
+  grid-template-rows: auto auto;
+  width: 100%;
+  border: 2px solid blue;
+  align-items: center;
+}
+#two-color .form-container h1 {
+  margin: 1rem 0;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+#two-color .form-container .selection-box {
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -280,20 +290,46 @@ header .hamburger {
   gap: 3rem;
   border: 2px solid #171614;
   border-radius: 8px;
-  height: 90%;
-  padding: 1.5rem 3rem;
+  padding: 1.5rem 0;
+  grid-row: 2;
 }
-#two-color .selection-box h1 {
+#two-color .form-container .selection-box h1 {
   color: #00B2CA;
   font-size: 1rem;
 }
-#two-color .selection-box .primary-color {
+#two-color .form-container .selection-box .selection-type {
   display: flex;
   flex-direction: row;
-  gap: 5rem;
+  align-items: center;
+  justify-content: space-between;
 }
-#two-color .arrow-box {
-  width: 48px;
-  height: 90%;
+#two-color .form-container .selection-box .selection-type h2 {
+  font-size: 1.8rem;
+}
+#two-color .form-container .selection-box .selection-type button {
+  border: none;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  background: #00B2CA;
+  color: #F6F1F8;
+  padding: 5px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#two-color .form-container .config-container {
+  grid-row: 2;
   border: 1px solid black;
+  height: 100%;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+#two-color .form-container .config-container .config-box {
+  border: 1px solid red;
+  height: 100%;
+  width: 100%;
+}
+
+#three-color {
+  border: 1px solid red;
+  width: 30%;
 }/*# sourceMappingURL=style.css.map */

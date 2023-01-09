@@ -1,4 +1,5 @@
-var two_color = document.getElementById('two-color');
+
+var main_config = document.getElementById('main-config');
 var three_color = document.getElementById('three-color');
 var custom_config = document.getElementById('custom-config');
 
@@ -9,28 +10,31 @@ var color_3 = document.getElementById('color-3');
 var border_color = document.getElementById('border-color');
 var lace_color = document.getElementById('lace-color');
 var other_options = document.getElementById('other-options');
+var color_3_selection = document.getElementById('color-3-selection');
 
 
 
 
 //configuration toggle
-function twoColorToggle(){
-    if(two_color.classList.contains('hidden')){
-        two_color.classList.remove('hidden');
+function mainConfigToggle(){
+    if(main_config.classList.contains('hidden')){
+        main_config.classList.remove('hidden');
     }
 
-    three_color.classList.add('hidden');
+    color_3_selection.classList.remove('selection-type');
+    color_3_selection.classList.add('hidden');
     custom_config.classList.add('hidden');
 
 }
 
 function threeColorToggle(){
-    if(three_color.classList.contains('hidden')){
-        three_color.classList.remove('hidden');
+    if(main_config.classList.contains('hidden')){
+        main_config.classList.remove('hidden');
     }
+    
+    color_3_selection.classList.remove('hidden');
+    color_3_selection.classList.add('selection-type');
 
-    two_color.classList.add('hidden');
-    custom_config.classList.add('hidden');
 
 }
 
@@ -39,66 +43,176 @@ function customConfigToggle(){
         custom_config.classList.remove('hidden');
     }
     
-    two_color.classList.add('hidden');
-    three_color.classList.add('hidden');
+    main_config.classList.add('hidden');
 
-}
-
-//configure options
-//function colorOneToggle(){
-//    if(color_1.classList.contains('hidden')){
-//        color_1.classList.remove('hidden');
-//    }
-//
-//    color_2.classList.add('hidden')
-//}
-
-function activeClassStrip(){
-    var active_class = document.getElementsByClassName('active');
 }
 
 function colorOneToggle(){
-    activeClassStrip();
-    
-    color_1.classList.remove('hidden');
-    color_1.classList.add('active');
+    if(color_1.classList.contains('hidden')){
+        color_1.classList.remove('hidden');
+    }
+
+    color_2.classList.add('hidden');
+    color_3.classList.add('hidden');
+    border_color.classList.add('hidden');
+    lace_color.classList.add('hidden');
+    other_options.classList.add('hidden');
+
+    document.getElementById('s1').classList.add('active');
+    document.getElementById('s2').classList.add('active');
+
+    document.getElementById('s3').classList.remove('active');
+    document.getElementById('s4').classList.remove('active');
+    document.getElementById('s5').classList.remove('active');
+    document.getElementById('s6').classList.remove('active');
+    document.getElementById('s7').classList.remove('active');
+    document.getElementById('s8').classList.remove('active');
+    document.getElementById('s9').classList.remove('active');
+    document.getElementById('s10').classList.remove('active');
+    document.getElementById('s11').classList.remove('active');
+    document.getElementById('s12').classList.remove('active');
+
 }
+
 
 function colorTwoToggle(){
-    activeClassStrip();
-    
-    color_2.classList.remove('hidden');
-    color_2.classList.add('active');
+    if(color_2.classList.contains('hidden')){
+        color_2.classList.remove('hidden');
+    }
+
+    color_1.classList.add('hidden');
+    color_3.classList.add('hidden');
+    border_color.classList.add('hidden');
+    lace_color.classList.add('hidden');
+    other_options.classList.add('hidden');
+
+    document.getElementById('s3').classList.add('active');
+    document.getElementById('s4').classList.add('active');
+
+    document.getElementById('s1').classList.remove('active');
+    document.getElementById('s2').classList.remove('active');
+    document.getElementById('s5').classList.remove('active');
+    document.getElementById('s6').classList.remove('active');
+    document.getElementById('s7').classList.remove('active');
+    document.getElementById('s8').classList.remove('active');
+    document.getElementById('s9').classList.remove('active');
+    document.getElementById('s10').classList.remove('active');
+    document.getElementById('s11').classList.remove('active');
+    document.getElementById('s12').classList.remove('active');
+
 }
 
+
 function colorThreeToggle(){
-    activeClassStrip();
-    
-    color_3.classList.remove('hidden');
-    color_3.classList.add('active');
+    if(color_3.classList.contains('hidden')){
+        color_3.classList.remove('hidden');
+    }
+
+    color_1.classList.add('hidden');
+    color_2.classList.add('hidden');
+    border_color.classList.add('hidden');
+    lace_color.classList.add('hidden');
+    other_options.classList.add('hidden');
+
+    document.getElementById('s5').classList.add('active');
+    document.getElementById('s6').classList.add('active');
+
+    document.getElementById('s1').classList.remove('active');
+    document.getElementById('s2').classList.remove('active');
+    document.getElementById('s3').classList.remove('active');
+    document.getElementById('s4').classList.remove('active');
+    document.getElementById('s7').classList.remove('active');
+    document.getElementById('s8').classList.remove('active');
+    document.getElementById('s9').classList.remove('active');
+    document.getElementById('s10').classList.remove('active');
+    document.getElementById('s11').classList.remove('active');
+    document.getElementById('s12').classList.remove('active');
+
 }
 
 function borderColorToggle(){
-    activeClassStrip();
-    
-    border_color.classList.remove('hidden');
-    border_color.classList.add('active');
+    if(border_color.classList.contains('hidden')){
+        border_color.classList.remove('hidden');
+    }
+
+    color_1.classList.add('hidden');
+    color_2.classList.add('hidden');
+    color_3.classList.add('hidden');
+    lace_color.classList.add('hidden');
+    other_options.classList.add('hidden');
+
+    document.getElementById('s7').classList.add('active');
+    document.getElementById('s8').classList.add('active');
+
+    document.getElementById('s1').classList.remove('active');
+    document.getElementById('s2').classList.remove('active');
+    document.getElementById('s5').classList.remove('active');
+    document.getElementById('s6').classList.remove('active');
+    document.getElementById('s3').classList.remove('active');
+    document.getElementById('s4').classList.remove('active');
+    document.getElementById('s9').classList.remove('active');
+    document.getElementById('s10').classList.remove('active');
+    document.getElementById('s11').classList.remove('active');
+    document.getElementById('s12').classList.remove('active');
+
 }
 
 function laceColorToggle(){
-    activeClassStrip();
-    
-    lace_color.classList.remove('hidden');
-    lace_color.classList.add('active');
+    if(lace_color.classList.contains('hidden')){
+        lace_color.classList.remove('hidden');
+    }
+
+    color_1.classList.add('hidden');
+    color_2.classList.add('hidden');
+    color_3.classList.add('hidden');
+    border_color.classList.add('hidden');
+    other_options.classList.add('hidden');
+
+    document.getElementById('s9').classList.add('active');
+    document.getElementById('s10').classList.add('active');
+
+    document.getElementById('s1').classList.remove('active');
+    document.getElementById('s2').classList.remove('active');
+    document.getElementById('s5').classList.remove('active');
+    document.getElementById('s6').classList.remove('active');
+    document.getElementById('s7').classList.remove('active');
+    document.getElementById('s8').classList.remove('active');
+    document.getElementById('s3').classList.remove('active');
+    document.getElementById('s4').classList.remove('active');
+    document.getElementById('s11').classList.remove('active');
+    document.getElementById('s12').classList.remove('active');
+
 }
 
 
 
 function otherOptionsToggle(){
-    activeClassStrip();
+    if(other_options.classList.contains('hidden')){
+        other_options.classList.remove('hidden');
+    }
+
+    color_1.classList.add('hidden');
+    color_2.classList.add('hidden');
+    color_3.classList.add('hidden');
+    border_color.classList.add('hidden');
+    lace_color.classList.add('hidden');
+
+    document.getElementById('s11').classList.add('active');
+    document.getElementById('s12').classList.add('active');
+
+    document.getElementById('s1').classList.remove('active');
+    document.getElementById('s2').classList.remove('active');
+    document.getElementById('s5').classList.remove('active');
+    document.getElementById('s6').classList.remove('active');
+    document.getElementById('s7').classList.remove('active');
+    document.getElementById('s8').classList.remove('active');
+    document.getElementById('s9').classList.remove('active');
+    document.getElementById('s10').classList.remove('active');
+    document.getElementById('s3').classList.remove('active');
+    document.getElementById('s4').classList.remove('active');
     
-    other_options.classList.remove('hidden');
-    other_options.classList.add('active');
+
 }
+
 
 

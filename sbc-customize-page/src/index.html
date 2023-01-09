@@ -55,7 +55,7 @@
                         <p>a short description of the shoe</p>
                         <div>
                             <h4>price</h4>
-                            <button onclick="twoColorToggle()">Select</button>
+                            <button onclick="mainConfigToggle()">Select</button>
                         </div>
                     </div>
                 </div>
@@ -93,77 +93,132 @@
 
             <div class="form-box">
 
-                <div id="two-color" class="form">
+                <div id="main-config" class="form">
                     
                     <div class="form-container">
 
-                        <h1>Custom Configurator</h1>
-
                         <div class="selection-box">
                             <div class="selection-type">
-                                <h2>Color 1</h2>
-                                <button onclick="colorOneToggle()">Choose</button>
+                                <h3>Color 1</h3>
+                                <button onclick="colorOneToggle()">
+                                    <span id="s1"></span>
+                                    <span id="s2"></span>
+                                </button>
                             </div>
                             <div class="selection-type">
-                                <h2>Color 2</h2>
-                                <button onclick="colorTwoToggle()">Choose</button>
+                                <h3>Color 2</h3>
+                                <button onclick="colorTwoToggle()">
+                                    <span id="s3"></span>
+                                    <span id="s4"></span>
+                                </button>
+                            </div>
+
+                            <div id="color-3-selection" class="selection-type">
+                                <h3>Color 3</h3>
+                                <button onclick="colorThreeToggle()">
+                                        <span id="s5"></span>
+                                        <span id="s6"></span>
+                                </button>
                             </div>
                             <div class="selection-type">
-                                <h2>Color 3</h2>
-                                <button onclick="colorThreeToggle()">Choose</button>
+                                <h3>Border Color</h3>
+                                <button onclick="borderColorToggle()">
+                                    <span id="s7"></span>
+                                    <span id="s8"></span>
+                                </button>
                             </div>
                             <div class="selection-type">
-                                <h2>Border Color</h2>
-                                <button onclick="borderColorToggle()">Choose</button>
+                                <h3>Lace Color</h3>
+                                <button onclick="laceColorToggle()">
+                                    <span id="s9"></span>
+                                    <span id="s10"></span>
+                                </button>
                             </div>
                             <div class="selection-type">
-                                <h2>Lace Color</h2>
-                                <button onclick="laceColorToggle()">Choose</button>
-                            </div>
-                            <div class="selection-type">
-                                <h2>Other Options</h2>
-                                <button onclick="otherOptionsToggle()">Choose</button>
+                                <h3>Other Options</h3>
+                                <button onclick="otherOptionsToggle()">
+                                    <span id="s11"></span>
+                                    <span id="s12"></span>
+                                </button>
                             </div>
                         </div>
 
-                        <div class="config-container">
-                            <div class="color-1 hidden active" id="color-1">
-                                <h2>Color 1</h2>
-                            </div>
-                            <div class="color-2 hidden" id="color-2">
-                                <h2>Color 2</h2>
-                            </div>
-                            <div class="color-3 hidden" id="color-3">
-                                <h2>Color 3</h2>
-                            </div>
-                            <div class="border-color hidden" id="border-color">
-                                <h2>Border Color</h2>
-                            </div>
-                            <div class="lace-color hidden" id="lace-color">
-                                <h2>Lace Color</h2>
-                            </div>
-                            <div class="other-options hidden" id="other-options">
-                                <h2>Other Options</h2>
-                            </div>
+                        <div class="config-box">
+                            <form action="">
 
 
+                                <div class="config-item color-selection" id="color-1">
+                                    <h4>Select A Color Below or Enter a Custom Color:</h4>
+                                        <div class="selection">
+                                            <div></div>
+                                            <label for="color-1__options">Red</label>
+                                            <input type="radio" id="color-1__options">
+                                        </div>
+                                        <div class="selection">
+                                            <div></div>
+                                            <label for="color-1__options__o">Red</label>
+                                            <input type="radio" id="color-1__options__o">
+                                        </div>
+                                        <div class="selection">
+                                            <div></div>
+                                            <label for="color-1__options__y">Red</label>
+                                            <input type="radio" id="color-1__options__y">
+                                        </div>
+                                        <div class="selection">
+                                            <div></div>
+                                            <label for="color-1__options__g">Red</label>
+                                            <input type="radio" id="color-1__options__g">
+                                        </div>
+                                        <div class="selection">
+                                            <div></div>
+                                            <label for="color-1__options__b">Red</label>
+                                            <input type="radio" id="color-1__options__b">
+                                        </div>
+                                        <div class="selection">
+                                            <div></div>
+                                            <label for="color-1__options__pr">Red</label>
+                                            <input type="radio" id="color-1__options__pr">
+                                        </div>
+                                        <div class="selection">
+                                            <div></div>
+                                            <label for="color-1__options__p">Red</label>
+                                            <input type="radio" id="color-1__options__p">
+                                        </div>
+                                        <div class="selection">
+                                            <div></div>
+                                            <label for="color-1__options__blk">Red</label>
+                                            <input type="radio" id="color-1__options__blk">
+                                        </div>
+                                        <div class="selection">
+                                            <div></div>
+                                            <label for="color-1__options__gry">Red</label>
+                                            <input type="radio" id="color-1__options__gry">
+                                        </div>
+                                </div>
+
+
+
+                                <div class="config-item color-2 hidden" id="color-2">
+                                    <h2>Color 2</h2>
+                                </div>
+                                <div class="config-item color-3 hidden" id="color-3">
+                                    <h2>Color 3</h2>
+                                </div>
+                                <div class="config-item border-color hidden" id="border-color">
+                                    <h2>Border Color</h2>
+                                </div>
+                                <div class="config-item lace-color hidden" id="lace-color">
+                                    <h2>Lace Color</h2>
+                                </div>
+                                <div class="config-item other-options hidden" id="other-options">
+                                    <h2>Other Options</h2>
+                                </div>
+                            </form>
                         </div>
-
-
-
-
-
-
                         
                     </div>
 
                 </div >
-
-                <div id="three-color" class="form hidden">
-                    <h1>Three Color</h1>
-                    <div>nice</div>
-                    <button>yes</button>
-                </div>
 
                 <div id="custom-config" class="form hidden">
                     <h1>Custom Config</h1>
